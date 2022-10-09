@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+/* Primary */
+
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+/* Neutral */
+
+--transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    min-width: 80%;
+    background-color:var(--very-light-gray);
+    margin: 15rem 0 0 0;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.car{
+    color:var(--very-light-gray);
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0 2.25rem 0 2.25rem;
+    line-height: 1.5rem;
+
+}
+
+.car.sedas{
+    background-color:var(--bright-orange);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.car.suvs{
+    background-color:var(--dark-cyan);
+}
+
+.car.luxury{
+    background-color:var(--very-dark-cyan);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+img{
+    max-width: 25%;
+    padding: 3rem 0 1rem 0;
+}
+
+.car h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight:700;
+    margin: 1rem 0 2rem 0;
+}
+
+.car p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight:400;
+    margin: 0 0 3rem 0;
+}
+
+.car button{
+    font-family: "Lexend Deca",sans-serif;
+    font-weight:400;
+    border:none;
+    background-color: var(--very-light-gray);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.car.sedas button{
+    color: var(--bright-orange);
+}
+
+.car.suvs button{
+    color: var(--dark-cyan);
+}
+
+.car.luxury button{
+    color: var(--very-dark-cyan);
+}
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    color:var(--bright-orange);
+
+}
+.attribution a {
+     color: var(--dark-cyan);
+     text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+    body{
+        margin-top:0;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    .car{
+        line-height: 1.5rem;
+        max-width: 300px;
+        min-height: 450px ;
+    }
+
+    .car.sedas{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    
+    .car.luxury{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    
+}
