@@ -72,7 +72,7 @@ img{
     padding: 3rem 0 1rem 0;
 }
 
-.car h1{
+.car h2{
     font-family: "Big Shoulders Display", sans-serif;
     font-weight:700;
     margin: 1rem 0 2rem 0;
@@ -84,7 +84,7 @@ img{
     margin: 0 0 3rem 0;
 }
 
-.car button{
+.car a{
     font-family: "Lexend Deca",sans-serif;
     font-weight:400;
     border:none;
@@ -92,17 +92,18 @@ img{
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
+    text-decoration: none;
 }
 
-.car.sedas button{
+.car.sedas a{
     color: var(--bright-orange);
 }
 
-.car.suvs button{
+.car.suvs a{
     color: var(--dark-cyan);
 }
 
-.car.luxury button{
+.car.luxury a{
     color: var(--very-dark-cyan);
 }
 
